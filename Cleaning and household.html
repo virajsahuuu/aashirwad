@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="aashirvaad.css">
+<link rel="stylesheet" href="aashirvaad2.css">
+	
+	
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
+</style>
+	
+</head>
+<body>
+	
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button">Close Menu</a>
+	<a href="aashirvaadtraders.html" onclick="w3_close()" class="w3-bar-item w3-button"> Home page </a>
+  <a href="#food" onclick="w3_close()" class="w3-bar-item w3-button">Munchies</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button"> Bakery & Dairy </a>
+	<a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">Cleaning & Household </a>
+	<a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">Beverages</a>
+	<a href="#about" onclick="w3_close()" class="w3-bar-item w3-button"> Pharma & care</a>
+	<a href="#about" onclick="w3_close()" class="w3-bar-item w3-button"> Beauty products </a>
+	<a href="#about" onclick="w3_close()" class="w3-bar-item w3-button"> Baby care </a>
+</nav>
+<div class="w3-top">
+  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+    <div class="w3-right w3-padding-16"></div>
+    <div class="w3-center w3-padding-16">Munchies</div>
+  </div>
+</div>
+	<h2 class="w3-center">&nbsp;</h2>
+
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="@aashirvaad traders (25).png" style="width:105%">
+  <img class="mySlides" src="@aashirvaad traders (26).png" style="width:105%">
+  <img class="mySlides" src="@aashirvaad traders (27).png" style="width:105%">
+  <img class="mySlides" src="@aashirvaad traders (29).png" style="width:105%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+  <div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+<div class="w3-row-padding w3-padding-16 w3-center" id="food">
+    <div class="w3-quarter">
+      <img src="images (2).jpg" alt="kurkure" style="width:35%">
+      <h6>kurkure</h6>
+		<p class="price">10₹</p>
+       <p><button>Add to Cart</button></p>
+    </div>
+    <div class="w3-quarter">
+      <img src="images (1).jpg" alt="lays" style="width:35%">
+      <h6>Lays</h6>
+      <p class="price">10₹</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+    <div class="w3-quarter">
+      <img src="../../../Users/Admin/Desktop/download (2).jpg" alt="lays" style="width:40%">
+      <h6>lays hot n sweet chilli</h6>
+		<p class="price">10₹</p>
+		<p><button>Add to Cart</button></p>
+		<br>
+    </div>
+    <div class="w3-quarter">
+      <img src="../../../Users/Admin/Desktop/images (1).jpg" alt=" lays magic masala" style="width:31%">
+      <h6> Lays magic masala</h6>
+		<p class="price">10₹</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+  </div>
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <img src="abc.jpg" alt="doritos" style="width:40%">
+      <h6>Doritos</h6>
+		 <p><button>Add to Cart</button></p>
+      </div>
+    <div class="w3-quarter">
+      <img src="Bingo mad angles.jpg" alt="BINGO" style="width:35%">
+      <h6>Bingo mad angles</h6>
+     <p><button>Add to Cart</button></p>
+    </div>
+    <div class="w3-quarter">
+      <p><img src="images (3).jpg" alt="activ popcorn" style="width:25.9%"></p>
+      <p>Activ popcorn
+      <p class="price">10₹</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+    <div class="w3-quarter">
+      <img src="images (4).jpg" alt="bingo" style="width:35%">
+      <h6>Bingo</h6>
+      <p><button>Add to Cart</button></p>
+    </div>
+  </div>
+	  
+<div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="munchie page 2.html" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+  
+  
+  <hr>
+  
+  
+  <footer class="w3-row-padding w3-padding-32">
+    <div class="w3-third">
+      <h3>Follow us on </h3>
+      <img src="Instagram.jpg" class="w3-left w3-margin-right" style="width:50px">
+      
+	  </div></footer>
+  <script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+ function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+	  
+	  </body> </html>
+	  

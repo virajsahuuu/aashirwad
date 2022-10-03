@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family:Lato.;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #000000;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #000000;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+	</style>
+	</head>
+	
+<body>
+<div class="navbar">
+  <a href="#">&nbsp;<font face="lato" size="+1" color="#FCFCFC"> Munchies</font></a>
+  <a href="#"> <font face="lato" size="+1" color="#FCFCFC"> Bakery & Dairy </font></a>
+  <a href="#">&nbsp;<font face="lato" size="+1" color=#FFFFFF>Cleaning & Household </font></a>
+  
+    <a href="#"><font face="lato" size="+1" color="#FCFCFC">Beverages</font></a>
+      
+  <a href="#">&nbsp;<font face="lato" size="+1" color= "#FFFFFF"> Pharma & care</font> </a>
+	<a href="#">&nbsp;<font face="lato" size="+1" color="#FCFCFC">Beauty products </font>  </a>
+	<a href="#">&nbsp;<font face="lato" size="+1" color="#FCFCFC"> Baby care</font> </a>
+</div>
+	<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button">Close Menu</a>
+  <a href="#food" onclick="w3_close()" class="w3-bar-item w3-button">Food</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+</nav>
+	<!-- Top menu -->
+
+    
+	<h1>   <div class="w3-center w3-padding-16">Munchies</div></h1>
+  
+
+	<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+    <div class="w3-quarter">
+      <img src="../../../Users/Admin/Desktop/images (1).jpg" alt="Lays magic masala" style="width:20%"><img src="../../../Users/Admin/Desktop/download (2).jpg" alt="lays" style="width:27%">
+      <h6>Lays magic masala            </h6>
+	  <p><button>Add to Cart</button></p>
+    </div>
+    <div class="w3-quarter">
+      <h6> Hot and sweet chilli</h6>
+		
+      <p>&nbsp;</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="images (3).jpg" alt="Activ popcorn" style="width:60%">
+      <h6>Activ popcorn</h6>
+		<p><button>Add to Cart</button></p>
+      <br>
+      <h3>&nbsp;</h3>
+    </div>
+    <div class="w3-quarter">
+      <img src="abc.jpg" alt="doritos" style="width:50%">
+		
+      <h6>Doritos</h6>
+		<p><button>Add to Cart</button></p>
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <img src="images (1).jpg" alt="Lays tomato " style="width:20%">
+      <h6>classic salted lays</h6>
+		<p><button>Add to Cart</button></p>
+    </div>
+    <div class="w3-quarter">
+      <img src="milano.jpg" alt="bingo mad angles " style="width:40%">
+      <h6> parle milano</h6>
+		<p><button>Add to Cart</button></p>
+    </div>
+    <div class="w3-quarter">
+      <img src="images (2).jpg" alt="Kurkure" style="width:20%">
+      <h6> kurkure masala munch </h6>
+		<p><button>Add to Cart</button></p>
+    </div>
+    <div class="w3-quarter">
+      <img src="images (4).jpg" alt="bingo chips" style="width:45%">
+      <h6>bingo</h6>
+		<p><button>Add to Cart</button></p>
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+	</div>
+		</body>
