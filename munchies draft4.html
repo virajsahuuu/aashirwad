@@ -1,32 +1,93 @@
-<!doctype html>
+<doctype html>
 <html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="aashirvaad.css">
 <link rel="stylesheet" href="aashirvaad2.css">
+<script src="cart.js"></script>
+
+
+<link rel="stylesheet" href=
+"https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+  
+    <!-- JavaScript Bundle with Popper -->
+    <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+  
+    <script src=
+"https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js">
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <style>
+    .fa-instagram {
+      background: #125688;
+      color: white;
+    }
+      </style>
+<style>
+  .container {
+      margin-top: 30px;
+      color: green;
+  }
+
+  span {
+      color: rgb(243, 92, 130);
+  }
+</style>
+
+
 	
 	
 <style>
+  .fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
 body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
 .w3-bar-block .w3-bar-item {padding:20px}
 </style>
 	
 </head>
 <body>
-	
-<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()"
-  class="w3-bar-item w3-button">Close Menu</a>
-	<a href="aashirvaadtraders.html" onclick="w3_close()" class="w3-bar-item w3-button"> Home page </a>
-  <a href="#food" onclick="w3_close()" class="w3-bar-item w3-button">Munchies</a>
-  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button"> Bakery & Dairy </a>
-	<a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">Cleaning & Household </a>
-	<a href="bevrages.html" onclick="w3_close()" class="w3-bar-item w3-button">Beverages</a>
-	<a href="#about" onclick="w3_close()" class="w3-bar-item w3-button"> Pharma & care</a>
-	<a href="#about" onclick="w3_close()" class="w3-bar-item w3-button"> Beauty products </a>
-	<a href="#about" onclick="w3_close()" class="w3-bar-item w3-button"> Baby care </a>
-</nav>
+
+  <a href="cart.html">
+    <div class="cart">
+      <i class="bi bi-cart2"></i>
+      <div id="cartAmount" class="cartAmount">0</div>
+    </div>
+  </a>
+  <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()"
+    class="w3-bar-item w3-button">Close Menu</a>
+      <a href="aashirvaadtraders.html" onclick="w3_close()" class="w3-bar-item w3-button"> Home page </a>
+    <a href="#food" onclick="w3_close()" class="w3-bar-item w3-button">Munchies</a>
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button"> Bakery & Dairy </a>
+         
+      <a href="bevrages.html" onclick="w3_close()" class="w3-bar-item w3-button">Beverages</a>
+      <a href="foodgrains and masalas.html" onclick="w3_close()" class="w3-bar-item w3-button"> Food grains ,masalas and oils</a>
+      
+      <a href="bathing and essentials.html" onclick="w3_close()" class="w3-bar-item w3-button"> Bathing Essentials</a>
+     
+          
+      <a href="contact us 3.html" onclick="w3_close()" class="w3-bar-item w3-button"> Contact Us </a>
+
+   
+  </nav>
 <div class="w3-top">
   <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
     <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
@@ -34,13 +95,13 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
     <div class="w3-center w3-padding-16">Munchies</div>
   </div>
 </div>
-	<h2 class="w3-center">&nbsp;</h2>
+
 
 <div class="w3-content w3-display-container">
   
-  <img class="mySlides" src="@aashirvaad traders (26).png" style="width:100%">
-  <img class="mySlides" src="@aashirvaad traders (27).png" style="width:100%">
-  <img class="mySlides" src="@aashirvaad traders (29).png" style="width:100%">
+  <img class="mySlides" src="Cookie slideshow photo.png" style="width:100%">
+  <img class="mySlides" src="Lays presentation image.jpg" style="width:100%">
+  <img class="mySlides" src="Munchies Tab .png" style="width:100%">
 
   <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
   <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
@@ -67,77 +128,146 @@ function showDivs(n) {
 </script>
   <div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
 <div class="w3-row-padding w3-padding-16 w3-center" id="food">
-    <div class="w3-quarter">
-      <img src="images (2).jpg" alt="kurkure" style="width:35%">
+    <div class="w3-quarter" id="item1">
+      <img src="images (2).jpg" alt="kurkure" style="width:31%">
       <h6>kurkure</h6>
 		<p class="price">10₹</p>
-       <p><button>Add to Cart</button></p>
+    <button type="button" 
+    class="btn btn-default btn-sm">
+    <div class="buttons">
+      <i onclick="decrement(id='item1')", class="bi bi-dash-lg"></i>
+      <i onclick="increment(id='item1')", class="bi bi-plus-lg"></i>
+    </div>
+    <b> Add to Cart </b>
+</button>
+</p>
     </div>
     <div class="w3-quarter">
-      <img src="images (1).jpg" alt="lays" style="width:35%">
+      <img src="images (1).jpg" alt="lays" style="width:32%">
       <h6>Lays</h6>
       <p class="price">10₹</p>
-      <p><button>Add to Cart</button></p>
+      <button type="button" 
+      class="btn btn-default btn-sm">
+      <span class="glyphicon 
+          glyphicon-shopping-cart">
+      </span>
+      <b> Add to Cart </b>
+  </button>
+</p>
     </div>
     <div class="w3-quarter">
       <img src="../../../Users/Admin/Desktop/download (2).jpg" alt="lays" style="width:40%">
       <h6>lays hot n sweet chilli</h6>
 		<p class="price">10₹</p>
-		<p><button>Add to Cart</button></p>
+		<button type="button" 
+                class="btn btn-default btn-sm">
+                <span class="glyphicon 
+                    glyphicon-shopping-cart">
+                </span>
+                <b> Add to Cart </b>
+            </button>
+        </p>
 		<br>
     </div>
     <div class="w3-quarter">
-      <img src="download (5).jpg" alt=" lays magic masala" style="width:45%">
+      <img src="tomato lays 1.png" alt=" lays magic masala" style="width:25%">
       <h6> Lays magic masala</h6>
 		<p class="price">10₹</p>
-      <p><button>Add to Cart</button></p>
+  <button type="button" 
+                class="btn btn-default btn-sm">
+                <span class="glyphicon 
+                    glyphicon-shopping-cart">
+                </span>
+                <b> Add to Cart </b>
+            </button>
+        </p>
     </div>
   </div>
   <div class="w3-row-padding w3-padding-16 w3-center">
     <div class="w3-quarter">
-      <img src="abc.jpg" alt="doritos" style="width:40%">
-      <h6>Doritos</h6>
-		 <p><button>Add to Cart</button></p>
+      <img src="lays magic masala.png" alt="doritos" style="width:30%">
+      <h6>Lays magic masala</h6>
+      <p class="price">10₹</p>
+      <button type="button" 
+      class="btn btn-default btn-sm">
+      <span class="glyphicon 
+          glyphicon-shopping-cart">
+      </span>
+      <b> Add to Cart </b>
+  </button>
+</p>
       </div>
     <div class="w3-quarter">
-      <img src="Bingo mad angles.jpg" alt="BINGO" style="width:35%">
-      <h6>Bingo mad angles</h6>
-     <p><button>Add to Cart</button></p>
+      <img src="protien cookie 4.png" alt="protien cookie" style="width:29%">
+      
+      <h6>Max protien cookie</h6>
+      
+      <p class="price">60₹</p>
+      
+ <button type="button" 
+                class="btn btn-default btn-sm">
+                <span class="glyphicon 
+                    glyphicon-shopping-cart">
+                </span>
+
+                <b> Add to Cart </b>
+            </button>
+        </p>
     </div>
     <div class="w3-quarter">
-      <p><img src="images (3).jpg" alt="activ popcorn" style="width:25.9%"></p>
-      <p>Activ popcorn
+      <p><img src="chocos.png" alt="activ popcorn" style="width:20%"></p>
+    
+      <p>Activ popcorn </p>
       <p class="price">10₹</p>
-      <p><button>Add to Cart</button></p>
+      
+  <button type="button" 
+                class="btn btn-default btn-sm">
+                <span class="glyphicon 
+                    glyphicon-shopping-cart">
+                </span>
+                <b> Add to Cart </b>
+            </button>
+        </p>
     </div>
     <div class="w3-quarter">
-      <img src="images (4).jpg" alt="bingo" style="width:35%">
+      <img src="images (4).jpg" alt="bingo" style="width:38%">
       <h6>Bingo</h6>
-      <p><button>Add to Cart</button></p>
+      <p class="price">10₹</p>
+
+  <button type="button" 
+                class="btn btn-default btn-sm">
+                <span class="glyphicon 
+                    glyphicon-shopping-cart">
+                </span>
+                
+                <b> Add to Cart </b>
+            </button>
+        </p>
     </div>
   </div>
 	  
 <div class="w3-center w3-padding-32">
     <div class="w3-bar">
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
-      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      
+      <a href="munchies draft4.html" class="w3-bar-item w3-black w3-button">1</a>
       <a href="munchie page 2.html" class="w3-bar-item w3-button w3-hover-black">2</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+      <a href="Munchie page3.html" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="Munchies page 4.html" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">5</a>
+      <a href="munchie page 2.html" class="w3-bar-item w3-button w3-hover-black">»</a>
     </div>
   </div>
   
   
   <hr>
   
-  
   <footer class="w3-row-padding w3-padding-32">
     <div class="w3-third">
       <h3>Follow us on </h3>
-      <img src="Instagram.jpg" class="w3-left w3-margin-right" style="width:50px">
+      <img src="Instagram.jpg" class="w3-left w3-margin-left" style="width:50px" on click="https://www.instagram.com/aashirvadtraders/"
       
-	  </div></footer>
+    </div>
+  
   <script>
 function w3_open() {
   document.getElementById("mySidebar").style.display = "block";
